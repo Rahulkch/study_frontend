@@ -31,7 +31,7 @@ function Input() {
       console.log(data); // Log the data for debugging
 
       // Send data to the backend
-      fetch('http://localhost:7000/route/add', {
+      fetch('https://study-backend-one.vercel.app/route/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

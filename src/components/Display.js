@@ -13,7 +13,7 @@ const Display = () => {
     const fetchData = async () => {
       try {
         // Fetch data from the backend API
-        const response = await fetch('http://localhost:7000/route/get');
+        const response = await fetch('https://study-backend-one.vercel.app/route/get');
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
@@ -37,7 +37,8 @@ const Display = () => {
   const handleDelete = async (id) => {
     try {
       // Send a delete request to the backend
-      const deleteResponse = await fetch(`http://localhost:7000/route/del/${id}`, {
+      // https://study-backend-one.vercel.app/route/add
+      const deleteResponse = await fetch(`https://study-backend-one.vercel.app/route/del/${id}`, {
         method: 'DELETE',
       });
 
